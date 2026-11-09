@@ -37,6 +37,27 @@ data while conversion is running. Do not point at an unrelated populated output.
 source path, as well as full shard hashes and counts. It does not decode images;
 decoder correctness and DDP sampling belong to downstream reader tests.
 
+## 跨设备复用与 agent 交接（2026-11-09 更新）
+
+**其他设备上的 agent 请先读 [AGENT_HANDOFF.md](AGENT_HANDOFF.md)。**
+本库仍是纯标准库数据准备工具，不包含训练入口，也不会自动启动训练。
+
+| 文档 | 内容 |
+|---|---|
+| [AGENT_HANDOFF.md](AGENT_HANDOFF.md) | 新设备实施顺序、权限边界、验收与交付清单 |
+| [READER_INTEGRATION.md](READER_INTEGRATION.md) | TAR读取、DDP/worker分配、尾样本、shuffle/RNG和恢复要求 |
+| [BENCHMARK_GUIDE.md](BENCHMARK_GUIDE.md) | 公平测试矩阵、完整遍历、遥测、调度与时间计算 |
+| [MACHINE_61_RESULTS.md](MACHINE_61_RESULTS.md) | 本机实测：约3.4倍短测、约4.9倍整轮改善及适用限制 |
+| [evidence/machine61_pipeline_summary.csv](evidence/machine61_pipeline_summary.csv) | 26项诊断的便携数值摘要 |
+
+经验总结：机械盘/RAID上，将大量小文件读取改为原字节TAR顺序读取，并测试合适的
+worker数和GPU调度，可能显著降低输入等待。但 **4 workers、4+4卡、4.9倍收益均不是跨机器默认答案**。
+TAR不等于不解码，不保证提高识别精度；改变采样/RNG轨迹也不保证与ImageFolder逐位等价。
+
+`prepare_imagenet.sh` 内置的是61机器的绝对路径，不要在其他设备直接执行。
+请优先使用上面的通用CLI，并替换source/output；转换、完整校验也会产生大量磁盘I/O，
+须事先确认设备负载和用户授权。新增文档不改变转换器源码或既有数据的转换签名。
+
 ## Public references and reproducibility
 
 - WebDataset format and shard writer:
