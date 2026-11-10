@@ -1,0 +1,94 @@
+{
+  "selection": {
+    "manifest_sha256": "f855f53ee416fdbb27e32b1102365235cbf9a3bad6efe57fd9c46974478308ef",
+    "samples": 256,
+    "payload_bytes": 29851472,
+    "tar_read_hash_seconds": 0.12040874920785427,
+    "source_read_compare_seconds": 0.02585634868592024,
+    "cache": "uncontrolled, TAR precedes source; no cold-cache speedup claimed",
+    "sample_set_sha256": "36f00d483af095ecf493afb8a6c0b3777471afddca134355c85eb6d6372bb3d3"
+  },
+  "phase": "train",
+  "python": "3.12.15",
+  "torch": "2.7.1+cu118",
+  "recipe": "illustrative torchvision RRC224 bicubic + flip + RandAugment(2,9) + Tensor + ImageNet normalize; NOT timm recipe equivalence",
+  "status": "complete",
+  "settings": {
+    "root": "/data1/xinghaitong/dataset/imagenet1k_original_tar_v1",
+    "phase": "train",
+    "count": 256,
+    "batch_size": 16,
+    "steps": 8,
+    "warmup": 4,
+    "max_seconds": 180,
+    "result": "experiments/webdataset_baseline/train_probe_reverse_20261110.json",
+    "execute": true,
+    "reverse": true
+  },
+  "measurements": {
+    "model": "torchvision vit_b_16 weights=None, eager BF16, SGD, no DDP/compile",
+    "batch_size": 16,
+    "warmup": 4,
+    "measured_steps": 8,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cases": [
+      {
+        "mode": "real_block_uint8",
+        "seconds_per_update": 0.05083034944254905,
+        "images_per_second": 314.77257535055867,
+        "cpu_batch_wait": {
+          "total_seconds": 0.01659909076988697,
+          "p50_seconds": 0.002091002184897661,
+          "p95_seconds": 0.0023485095705837013
+        },
+        "gpu_h2d_and_preprocess_ms": 2.282251998782158,
+        "gpu_model_step_ms": 47.127795696258545,
+        "peak_allocated_gib": 1.5867056846618652,
+        "finite_losses": true
+      },
+      {
+        "mode": "real_block",
+        "seconds_per_update": 0.04934591974597424,
+        "images_per_second": 324.24160056932203,
+        "cpu_batch_wait": {
+          "total_seconds": 0.014303009025752544,
+          "p50_seconds": 0.001781906932592392,
+          "p95_seconds": 0.0020134299993515015
+        },
+        "gpu_h2d_and_preprocess_ms": 6.252531945705414,
+        "gpu_model_step_ms": 42.028167724609375,
+        "peak_allocated_gib": 1.585190773010254,
+        "finite_losses": true
+      },
+      {
+        "mode": "real_parent",
+        "seconds_per_update": 0.12222651019692421,
+        "images_per_second": 130.90449833036823,
+        "cpu_batch_wait": {
+          "total_seconds": 0.5345518589019775,
+          "p50_seconds": 0.06470049638301134,
+          "p95_seconds": 0.07658183076418935
+        },
+        "gpu_h2d_and_preprocess_ms": 2.902655988931656,
+        "gpu_model_step_ms": 53.175171852111816,
+        "peak_allocated_gib": 1.585190773010254,
+        "finite_losses": true
+      },
+      {
+        "mode": "synthetic",
+        "seconds_per_update": 0.04272617329843342,
+        "images_per_second": 374.47772090992873,
+        "cpu_batch_wait": {
+          "total_seconds": 6.365589797496796e-06,
+          "p50_seconds": 7.171183824539185e-07,
+          "p95_seconds": 1.1777039617300033e-06
+        },
+        "gpu_h2d_and_preprocess_ms": 0.0046080000611254945,
+        "gpu_model_step_ms": 42.71615982055664,
+        "peak_allocated_gib": 1.5756077766418457,
+        "finite_losses": true
+      }
+    ],
+    "caveat": "Synthetic case isolates model but not matching input/labels; real RAM samples, no disk timing. CUDA events include stream gaps; CPU wait can overlap GPU, timings not additive."
+  }
+}

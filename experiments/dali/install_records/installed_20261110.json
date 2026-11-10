@@ -1,0 +1,842 @@
+{
+  "version": "1",
+  "pip_version": "26.2.2",
+  "install": [
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvidia_dali_cuda120-2.4.0-py3-none-manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "8be1bf9137cf4e3a62b51db5de818226ef6c81ec17791672d06ed5351d6e8eb1"
+          },
+          "hash": "sha256=8be1bf9137cf4e3a62b51db5de818226ef6c81ec17791672d06ed5351d6e8eb1"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvidia-dali-cuda120",
+        "version": "2.4.0",
+        "dynamic": [
+          "author",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "NVIDIA DALI  for CUDA 12.0. Git SHA: 3c14d036e5b911b192b8835f8008358c9b78b22a",
+        "description": "NVIDIA DALI\n===========\n\nThe NVIDIA Data Loading Library (DALI) is a library for data loading and\npre-processing to accelerate deep learning applications. It provides a\ncollection of highly optimized building blocks for loading and processing\nimage, video and audio data. It can be used as a portable drop-in replacement\nfor built in data loaders and data iterators in popular deep learning frameworks.\n\nDeep learning applications require complex, multi-stage data processing pipelines\nthat include loading, decoding, cropping, resizing, and many other augmentations.\nThese data processing pipelines, which are currently executed on the CPU, have become a\nbottleneck, limiting the performance and scalability of training and inference.\n\nDALI addresses the problem of the CPU bottleneck by offloading data preprocessing to the\nGPU. Additionally, DALI relies on its own execution engine, built to maximize the throughput\nof the input pipeline. Features such as prefetching, parallel execution, and batch processing\nare handled transparently for the user.\n\nIn addition, the deep learning frameworks have multiple data pre-processing implementations,\nresulting in challenges such as portability of training and inference workflows, and code\nmaintainability. Data processing pipelines implemented using DALI are portable because they\ncan easily be retargeted to TensorFlow, PyTorch, MXNet and PaddlePaddle.\n\nFor more details please check the\n`latest DALI Documentation <https://docs.nvidia.com/deeplearning/dali/user-guide/docs/index.html>`_.\n\n.. image:: https://raw.githubusercontent.com/NVIDIA/DALI/main/dali.png\n    :width: 800\n    :align: center\n    :alt: DALI Diagram\n\n",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/NVIDIA/dali",
+        "author": "NVIDIA Corporation",
+        "license": "Apache License 2.0",
+        "classifier": [
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: Free Threading :: 3 - Stable"
+        ],
+        "requires_dist": [
+          "astunparse<=1.6.3,>=1.6.0",
+          "gast<=0.7.0,>=0.3.3",
+          "six<=1.17,>=1.16",
+          "optree",
+          "packaging<=26.3",
+          "numpy",
+          "nvtx",
+          "makefun",
+          "libcst~=1.8",
+          "nvidia-nvimgcodec-cu12[all]<0.10.0,>=0.9.0",
+          "nvidia-libnvcomp-cu12==5.3.0.16"
+        ],
+        "requires_python": ">=3.10, <3.16"
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvidia_libnvcomp_cu12-5.3.0.16-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "535944be2e37ead56ad1ef80e9dd58a3126fc2ccf238ddffc9d1cb7a48f5300a"
+          },
+          "hash": "sha256=535944be2e37ead56ad1ef80e9dd58a3126fc2ccf238ddffc9d1cb7a48f5300a"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvidia-libnvcomp-cu12",
+        "version": "5.3.0.16",
+        "dynamic": [
+          "author",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "summary"
+        ],
+        "summary": "NVIDIA nvcomp for CUDA 12",
+        "description": "NVIDIA nvcomp\n=================\n\nThe nvCOMP library provides fast lossless data compression and decompression using a GPU.\nIt features generic compression interfaces to enable developers to use high-performance GPU compressors in their applications.\n",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://developer.nvidia.com/nvcomp",
+        "author": "NVIDIA Corporation",
+        "license": "LICENSE AGREEMENT FOR NVIDIA SOFTWARE DEVELOPMENT KITS",
+        "license_file": [
+          "LICENSE",
+          "NOTICE"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/astunparse-1.6.3-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8"
+          },
+          "hash": "sha256=c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "astunparse",
+        "version": "1.6.3",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "An AST unparser for Python",
+        "description": "============\nAST Unparser\n============\n\n.. image:: https://badge.fury.io/py/astunparse.png\n    :target: http://badge.fury.io/py/astunparse\n\n.. image:: https://travis-ci.org/simonpercivall/astunparse.png?branch=master\n    :target: https://travis-ci.org/simonpercivall/astunparse\n\n.. image:: https://readthedocs.org/projects/astunparse/badge/\n    :target: https://astunparse.readthedocs.org/\n\nAn AST unparser for Python.\n\nThis is a factored out version of ``unparse`` found in the Python\nsource distribution; under Demo/parser in Python 2 and under Tools/parser\nin Python 3.\n\nBasic example::\n\n    import inspect\n    import ast\n    import astunparse\n\n    # get back the source code\n    astunparse.unparse(ast.parse(inspect.getsource(ast)))\n\n    # get a pretty-printed dump of the AST\n    astunparse.dump(ast.parse(inspect.getsource(ast)))\n\n\nThis library is single-source compatible with Python 2.6 through Python 3.5. It\nis authored by the Python core developers; I have simply merged the Python 2.7\nand the Python 3.5 source and test suites, and added a wrapper. This factoring\nout is to provide a library implementation that supports both versions.\n\nAdded to this is a pretty-printing ``dump`` utility function.\n\nThe test suite both runs specific tests and also roundtrips much of the\nstandard library.\n\nExtensions and Alternatives\n---------------------------\n\nSimilar projects include:\n\n    * codegen_\n    * astor_\n    * astmonkey_\n    * astprint_\n\nNone of these roundtrip much of the standard library and fail several of the basic\ntests in the ``test_unparse`` test suite.\n\nThis library uses mature and core maintained code instead of trying to patch\nexisting libraries. The ``unparse`` and the ``test_unparse`` modules\nare under the PSF license.\n\nExtensions include:\n\n    * typed-astunparse: extends astunparse to support type annotations.\n\n* Documentation: http://astunparse.rtfd.org.\n\nFeatures\n--------\n\n* unparses Python AST.\n* pretty-prints AST.\n\n\n.. _codegen: https://github.com/andreif/codegen\n.. _astor: https://github.com/berkerpeksag/astor\n.. _astmonkey: https://github.com/konradhalas/astmonkey\n.. _astprint: https://github.com/Manticore/astprint\n\n\nChangelog\n=========\n\nHere's the recent changes to AST Unparser.\n\n1.6.3 - 2019-12-22\n~~~~~~~~~~~~~~~~~~\n\n* Add full support for Python 3.8\n\n1.6.2 - 2019-01-19\n~~~~~~~~~~~~~~~~~~\n\n* Add support for the Constant node in Python 3.8\n* Add tests to the sdist\n\n1.6.1 - 2018-10-03\n~~~~~~~~~~~~~~~~~~\n\n* Fix the roundtripping of very complex f-strings.\n\n1.6.0 - 2018-09-30\n~~~~~~~~~~~~~~~~~~\n\n* Python 3.7 compatibility\n\n1.5.0 - 2017-02-05\n~~~~~~~~~~~~~~~~~~\n\n* Python 3.6 compatibility\n* bugfix: correct argparser option type\n\n1.4.0 - 2016-06-24\n~~~~~~~~~~~~~~~~~~\n\n* Support for the ``async`` keyword\n* Support for unparsing \"Interactive\" and \"Expression\" nodes\n\n1.3.0 - 2016-01-17\n~~~~~~~~~~~~~~~~~~\n\n* Python 3.5 compatibility\n\n1.2.0 - 2014-04-03\n~~~~~~~~~~~~~~~~~~\n\n* Python 2.6 through 3.4 compatibility\n* A new function ``dump`` is added to return a pretty-printed version\n  of the AST. It's also available when running ``python -m astunparse``\n  as the ``--dump`` argument.\n\n1.1.0 - 2014-04-01\n~~~~~~~~~~~~~~~~~~\n\n* ``unparse`` will return the source code for an AST. It is pretty\n  feature-complete, and round-trips the stdlib, and is compatible with\n  Python 2.7 and Python 3.4.\n\n  Running ``python -m astunparse`` will print the round-tripped source\n  for any python files given as argument.\n\n\n",
+        "keywords": [
+          "astunparse"
+        ],
+        "home_page": "https://github.com/simonpercivall/astunparse",
+        "maintainer": "Simon Percivall",
+        "maintainer_email": "percivall@gmail.com",
+        "license": "BSD",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Topic :: Software Development :: Code Generators"
+        ],
+        "requires_dist": [
+          "wheel (<1.0,>=0.23.0)",
+          "six (<2.0,>=1.6.1)"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/gast-0.7.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "99cbf1365633a74099f69c59bd650476b96baa5ef196fec88032b00b31ba36f7"
+          },
+          "hash": "sha256=99cbf1365633a74099f69c59bd650476b96baa5ef196fec88032b00b31ba36f7"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "gast",
+        "version": "0.7.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Python AST that abstracts the underlying Python version",
+        "description": "\nA generic AST to represent Python2 and Python3's Abstract Syntax Tree(AST).\n\nGAST provides a compatibility layer between the AST of various Python versions,\nas produced by ``ast.parse`` from the standard ``ast`` module.\n",
+        "home_page": "https://github.com/serge-sans-paille/gast/",
+        "author": "serge-sans-paille",
+        "author_email": "serge.guelton@telecom-bretagne.eu",
+        "license": "BSD 3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/libcst-1.9.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "8d731abe1307720ea1a52d447555e8443a6d130e0e520243c0634a58f6edbc9d"
+          },
+          "hash": "sha256=8d731abe1307720ea1a52d447555e8443a6d130e0e520243c0634a58f6edbc9d"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "libcst",
+        "version": "1.9.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A concrete syntax tree with AST-like properties for Python 3.0 through 3.15 programs.",
+        "description": ".. image:: docs/source/_static/logo/horizontal.svg\n   :width: 600 px\n   :alt: LibCST\n\nA Concrete Syntax Tree (CST) parser and serializer library for Python\n\n|support-ukraine| |readthedocs-badge| |ci-badge| |pypi-badge| |pypi-download| |notebook-badge| |types-badge|\n\n.. |support-ukraine| image:: https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB\n   :alt: Support Ukraine - Help Provide Humanitarian Aid to Ukraine.\n   :target: https://opensource.fb.com/support-ukraine\n\n.. |readthedocs-badge| image:: https://readthedocs.org/projects/libcst/badge/?version=latest&style=flat\n   :target: https://libcst.readthedocs.io/en/latest/\n   :alt: Documentation\n\n.. |ci-badge| image:: https://github.com/Instagram/LibCST/actions/workflows/build.yml/badge.svg\n   :target: https://github.com/Instagram/LibCST/actions/workflows/build.yml?query=branch%3Amain\n   :alt: Github Actions\n\n.. |pypi-badge| image:: https://img.shields.io/pypi/v/libcst.svg\n   :target: https://pypi.org/project/libcst\n   :alt: PYPI\n\n.. |pypi-download| image:: https://pepy.tech/badge/libcst/month\n   :target: https://pepy.tech/project/libcst/month\n   :alt: PYPI Download\n\n\n.. |notebook-badge| image:: https://img.shields.io/badge/notebook-run-579ACA.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABZCAMAAABi1XidAAAB8lBMVEX///9XmsrmZYH1olJXmsr1olJXmsrmZYH1olJXmsr1olJXmsrmZYH1olL1olJXmsr1olJXmsrmZYH1olL1olJXmsrmZYH1olJXmsr1olL1olJXmsrmZYH1olL1olJXmsrmZYH1olL1olL0nFf1olJXmsrmZYH1olJXmsq8dZb1olJXmsrmZYH1olJXmspXmspXmsr1olL1olJXmsrmZYH1olJXmsr1olL1olJXmsrmZYH1olL1olLeaIVXmsrmZYH1olL1olL1olJXmsrmZYH1olLna31Xmsr1olJXmsr1olJXmsrmZYH1olLqoVr1olJXmsr1olJXmsrmZYH1olL1olKkfaPobXvviGabgadXmsqThKuofKHmZ4Dobnr1olJXmsr1olJXmspXmsr1olJXmsrfZ4TuhWn1olL1olJXmsqBi7X1olJXmspZmslbmMhbmsdemsVfl8ZgmsNim8Jpk8F0m7R4m7F5nLB6jbh7jbiDirOEibOGnKaMhq+PnaCVg6qWg6qegKaff6WhnpKofKGtnomxeZy3noG6dZi+n3vCcpPDcpPGn3bLb4/Mb47UbIrVa4rYoGjdaIbeaIXhoWHmZYHobXvpcHjqdHXreHLroVrsfG/uhGnuh2bwj2Hxk17yl1vzmljzm1j0nlX1olL3AJXWAAAAbXRSTlMAEBAQHx8gICAuLjAwMDw9PUBAQEpQUFBXV1hgYGBkcHBwcXl8gICAgoiIkJCQlJicnJ2goKCmqK+wsLC4usDAwMjP0NDQ1NbW3Nzg4ODi5+3v8PDw8/T09PX29vb39/f5+fr7+/z8/Pz9/v7+zczCxgAABC5JREFUeAHN1ul3k0UUBvCb1CTVpmpaitAGSLSpSuKCLWpbTKNJFGlcSMAFF63iUmRccNG6gLbuxkXU66JAUef/9LSpmXnyLr3T5AO/rzl5zj137p136BISy44fKJXuGN/d19PUfYeO67Znqtf2KH33Id1psXoFdW30sPZ1sMvs2D060AHqws4FHeJojLZqnw53cmfvg+XR8mC0OEjuxrXEkX5ydeVJLVIlV0e10PXk5k7dYeHu7Cj1j+49uKg7uLU61tGLw1lq27ugQYlclHC4bgv7VQ+TAyj5Zc/UjsPvs1sd5cWryWObtvWT2EPa4rtnWW3JkpjggEpbOsPr7F7EyNewtpBIslA7p43HCsnwooXTEc3UmPmCNn5lrqTJxy6nRmcavGZVt/3Da2pD5NHvsOHJCrdc1G2r3DITpU7yic7w/7Rxnjc0kt5GC4djiv2Sz3Fb2iEZg41/ddsFDoyuYrIkmFehz0HR2thPgQqMyQYb2OtB0WxsZ3BeG3+wpRb1vzl2UYBog8FfGhttFKjtAclnZYrRo9ryG9uG/FZQU4AEg8ZE9LjGMzTmqKXPLnlWVnIlQQTvxJf8ip7VgjZjyVPrjw1te5otM7RmP7xm+sK2Gv9I8Gi++BRbEkR9EBw8zRUcKxwp73xkaLiqQb+kGduJTNHG72zcW9LoJgqQxpP3/Tj//c3yB0tqzaml05/+orHLksVO+95kX7/7qgJvnjlrfr2Ggsyx0eoy9uPzN5SPd86aXggOsEKW2Prz7du3VID3/tzs/sSRs2w7ovVHKtjrX2pd7ZMlTxAYfBAL9jiDwfLkq55Tm7ifhMlTGPyCAs7RFRhn47JnlcB9RM5T97ASuZXIcVNuUDIndpDbdsfrqsOppeXl5Y+XVKdjFCTh+zGaVuj0d9zy05PPK3QzBamxdwtTCrzyg/2Rvf2EstUjordGwa/kx9mSJLr8mLLtCW8HHGJc2R5hS219IiF6PnTusOqcMl57gm0Z8kanKMAQg0qSyuZfn7zItsbGyO9QlnxY0eCuD1XL2ys/MsrQhltE7Ug0uFOzufJFE2PxBo/YAx8XPPdDwWN0MrDRYIZF0mSMKCNHgaIVFoBbNoLJ7tEQDKxGF0kcLQimojCZopv0OkNOyWCCg9XMVAi7ARJzQdM2QUh0gmBozjc3Skg6dSBRqDGYSUOu66Zg+I2fNZs/M3/f/Grl/XnyF1Gw3VKCez0PN5IUfFLqvgUN4C0qNqYs5YhPL+aVZYDE4IpUk57oSFnJm4FyCqqOE0jhY2SMyLFoo56zyo6becOS5UVDdj7Vih0zp+tcMhwRpBeLyqtIjlJKAIZSbI8SGSF3k0pA3mR5tHuwPFoa7N7reoq2bqCsAk1HqCu5uvI1n6JuRXI+S1Mco54YmYTwcn6Aeic+kssXi8XpXC4V3t7/ADuTNKaQJdScAAAAAElFTkSuQmCC\n   :target: https://mybinder.org/v2/gh/Instagram/LibCST/main?filepath=docs%2Fsource%2Ftutorial.ipynb\n   :alt: Notebook\n\n.. |types-badge| image:: https://img.shields.io/pypi/types/libcst\n   :target: https://pypi.org/project/libcst\n   :alt: PYPI - Types\n\n.. intro-start\n\nLibCST parses Python 3.0 -> 3.15 source code as a CST tree that keeps\nall formatting details (comments, whitespaces, parentheses, etc). It's useful for\nbuilding automated refactoring (codemod) applications and linters.\n\n.. intro-end\n\n.. why-libcst-intro-start\n\nLibCST creates a compromise between an Abstract Syntax Tree (AST) and a traditional\nConcrete Syntax Tree (CST). By carefully reorganizing and naming node types and\nfields, we've created a lossless CST that looks and feels like an AST.\n\n.. why-libcst-intro-end\n\nYou can learn more about `the value that LibCST provides\n<https://libcst.readthedocs.io/en/latest/why_libcst.html>`__ and `our\nmotivations for the project\n<https://libcst.readthedocs.io/en/latest/motivation.html>`__\nin `our documentation <https://libcst.readthedocs.io/en/latest/index.html>`__.\nTry it out with `notebook examples <https://mybinder.org/v2/gh/Instagram/LibCST/main?filepath=docs%2Fsource%2Ftutorial.ipynb>`__.\n\nExample expression::\n\n    1 + 2\n\nCST representation:\n\n.. code-block:: python\n\n    BinaryOperation(\n        left=Integer(\n            value='1',\n            lpar=[],\n            rpar=[],\n        ),\n        operator=Add(\n            whitespace_before=SimpleWhitespace(\n                value=' ',\n            ),\n            whitespace_after=SimpleWhitespace(\n                value=' ',\n            ),\n        ),\n        right=Integer(\n            value='2',\n            lpar=[],\n            rpar=[],\n        ),\n        lpar=[],\n        rpar=[],\n    )\n\nGetting Started\n===============\n\nExamining a sample tree\n-----------------------\n\nTo examine the tree that is parsed from a particular file, do the following::\n\n    python -m libcst.tool print <some_py_file.py>\n\nAlternatively, you can import LibCST into a Python REPL and use the included parser\nand pretty printing functions:\n\n>>> import libcst as cst\n>>> from libcst.tool import dump\n>>> print(dump(cst.parse_expression(\"(1 + 2)\")))\nBinaryOperation(\n  left=Integer(\n    value='1',\n  ),\n  operator=Add(),\n  right=Integer(\n    value='2',\n  ),\n  lpar=[\n    LeftParen(),\n  ],\n  rpar=[\n    RightParen(),\n  ],\n)\n\nFor a more detailed usage example, `see our documentation\n<https://libcst.readthedocs.io/en/latest/tutorial.html>`__.\n\nInstallation\n------------\n\nLibCST requires Python 3.9+ and can be easily installed using most common Python\npackaging tools. We recommend installing the latest stable release from\n`PyPI <https://pypi.org/project/libcst/>`_ with pip:\n\n.. code-block:: shell\n\n    pip install libcst\n\nFor parsing, LibCST ships with a native extension, so releases are distributed as binary\nwheels as well as the source code. If a binary wheel is not available for your system\n(Linux/Windows x86/x64 and Mac x64/arm are covered), you'll need a recent\n`Rust toolchain <https://rustup.rs>`_ for installing.\n\nFurther Reading\n---------------\n- `Static Analysis at Scale: An Instagram Story. <https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c>`_\n- `Refactoring Python with LibCST. <https://chairnerd.seatgeek.com/refactoring-python-with-libcst/>`_\n\nDevelopment\n-----------\n\nSee `CONTRIBUTING.md <CONTRIBUTING.md>`_ for more details.\n\nBuilding\n~~~~~~~~\n\nIn order to build LibCST, which includes a native parser module, you\nwill need to have the Rust build tool ``cargo`` on your path. You can\nusually install ``cargo`` using your system package manager, but the\nmost popular way to install cargo is using\n`rustup <https://rustup.rs/>`_.\n\nTo build just the native parser, do the following from the ``native``\ndirectory:\n\n.. code-block:: shell\n\n    cargo build\n\nThe ``libcst.native`` module should be rebuilt automatically, but to force it:\n\n.. code-block:: shell\n\n    uv sync --reinstall-package libcst\n\nType Checking\n~~~~~~~~~~~~~\n\nWe use `Pyre <https://github.com/facebook/pyre-check>`_ for type-checking.\n\nTo verify types for the library, do the following in the root:\n\n.. code-block:: shell\n\n    uv run poe typecheck\n\nGenerating Documents\n~~~~~~~~~~~~~~~~~~~~\n\nTo generate documents, do the following in the root:\n\n.. code-block:: shell\n\n    uv run --group docs poe docs\n\nFuture\n======\n\n- Advanced full repository facts providers like fully qualified name and call graph.\n\nLicense\n=======\n\nLibCST is `MIT licensed <LICENSE>`_, as found in the LICENSE file.\n\n.. fb-docs-start\n\nPrivacy Policy and Terms of Use\n===============================\n\n- `Privacy Policy <https://opensource.facebook.com/legal/privacy>`_\n- `Terms of Use <https://opensource.facebook.com/legal/terms>`_\n\n.. fb-docs-end\n\nAcknowledgements\n================\n\n- Guido van Rossum for creating the parser generator pgen2 (originally used in lib2to3 and forked into parso).\n- David Halter for parso which provides the parser and tokenizer that LibCST sits on top of.\n- Zac Hatfield-Dodds for hypothesis integration which continues to help us find bugs.\n- Zach Hammer improved type annotation for Mypy compatibility.\n",
+        "description_content_type": "text/x-rst",
+        "license": "All contributions towards LibCST are MIT licensed.\n\nSome Python files have been derived from the standard library and are therefore\nPSF licensed. Modifications on these files are dual licensed (both MIT and\nPSF). These files are:\n\n- libcst/_parser/base_parser.py\n- libcst/_parser/parso/utils.py\n- libcst/_parser/parso/pgen2/generator.py\n- libcst/_parser/parso/pgen2/grammar_parser.py\n- libcst/_parser/parso/python/py_token.py\n- libcst/_parser/parso/python/tokenize.py\n- libcst/_parser/parso/tests/test_fstring.py\n- libcst/_parser/parso/tests/test_tokenize.py\n- libcst/_parser/parso/tests/test_utils.py\n- native/libcst/src/tokenizer/core/mod.rs\n- native/libcst/src/tokenizer/core/string_types.rs\n\nSome Python files have been taken from dataclasses and are therefore Apache\nlicensed. Modifications on these files are licensed under Apache 2.0 license.\nThese files are:\n\n- libcst/_add_slots.py\n\n-------------------------------------------------------------------------------\n\nMIT License\n\nCopyright (c) Meta Platforms, Inc. and affiliates.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n-------------------------------------------------------------------------------\n\nPYTHON SOFTWARE FOUNDATION LICENSE VERSION 2\n\n1. This LICENSE AGREEMENT is between the Python Software Foundation\n(\"PSF\"), and the Individual or Organization (\"Licensee\") accessing and\notherwise using this software (\"Python\") in source or binary form and\nits associated documentation.\n\n2. Subject to the terms and conditions of this License Agreement, PSF hereby\ngrants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,\nanalyze, test, perform and/or display publicly, prepare derivative works,\ndistribute, and otherwise use Python alone or in any derivative version,\nprovided, however, that PSF's License Agreement and PSF's notice of copyright,\ni.e., \"Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,\n2011, 2012, 2013, 2014, 2015 Python Software Foundation; All Rights Reserved\"\nare retained in Python alone or in any derivative version prepared by Licensee.\n\n3. In the event Licensee prepares a derivative work that is based on\nor incorporates Python or any part thereof, and wants to make\nthe derivative work available to others as provided herein, then\nLicensee hereby agrees to include in any such work a brief summary of\nthe changes made to Python.\n\n4. PSF is making Python available to Licensee on an \"AS IS\"\nbasis.  PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR\nIMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND\nDISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS\nFOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT\nINFRINGE ANY THIRD PARTY RIGHTS.\n\n5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON\nFOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS\nA RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON,\nOR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.\n\n6. This License Agreement will automatically terminate upon a material\nbreach of its terms and conditions.\n\n7. Nothing in this License Agreement shall be deemed to create any\nrelationship of agency, partnership, or joint venture between PSF and\nLicensee.  This License Agreement does not grant permission to use PSF\ntrademarks or trade name in a trademark sense to endorse or promote\nproducts or services of Licensee, or any third party.\n\n8. By copying, installing or otherwise using Python, Licensee\nagrees to be bound by the terms and conditions of this License\nAgreement.\n\n-------------------------------------------------------------------------------\n\nAPACHE LICENSE, VERSION 2.0\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Topic :: Software Development :: Libraries",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: Free Threading",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "pyyaml>=5.2; python_version < \"3.13\"",
+          "pyyaml-ft>=8.0.0; python_version == \"3.13\"",
+          "pyyaml>=6.0.3; python_version >= \"3.14\"",
+          "typing-extensions; python_version < \"3.10\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://libcst.readthedocs.io/en/latest/",
+          "Github, https://github.com/Instagram/LibCST",
+          "Changelog, https://github.com/Instagram/LibCST/blob/main/CHANGELOG.md"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvidia_nvimgcodec_cu12-0.9.0.20-py3-none-manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "00627d63501ff83a7578683f784f03d07c6b69a1db6017fdabfacb0fc1c4cb8a"
+          },
+          "hash": "sha256=00627d63501ff83a7578683f784f03d07c6b69a1db6017fdabfacb0fc1c4cb8a"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvidia-nvimgcodec-cu12",
+        "version": "0.9.0.20",
+        "dynamic": [
+          "author",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "provides-extra",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "NVIDIA nvimgcodec  for CUDA 12.",
+        "description": "NVIDIA nvimgcodec\n=================\n\nnvImageCodec is a library of accelerated codec with unified interface. It is designed as a framework for extension modules which delivers codec plugins.\n\nYou can install the following optional extras:\n\n    - **nvjpeg**: Includes nvjpeg package dependency, needed to run the nvjpeg extension.\n    - **nvjpeg2k**: Includes nvjpeg2k package dependency, needed to run the nvjpeg2k extension.\n    - **nvtiff**: Includes nvtiff and nvcomp package dependency, needed to run the nvtiff extension.\n    - **all**: Includes all optional dependencies.\n",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/NVIDIA/nvImageCodec",
+        "author": "NVIDIA Corporation",
+        "license": "Apache License 2.0",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "nvidia-nvjpeg-cu12; extra == \"nvjpeg\"",
+          "nvidia-nvjpeg2k-cu12; extra == \"nvjpeg2k\"",
+          "nvidia-nvtiff-cu12>=0.8.0; extra == \"nvtiff\"",
+          "nvidia-libnvcomp-cu12<6,>=5; extra == \"nvtiff\"",
+          "nvidia-nvjpeg-cu12; extra == \"all\"",
+          "nvidia-nvjpeg2k-cu12; extra == \"all\"",
+          "nvidia-nvtiff-cu12>=0.8.0; extra == \"all\"",
+          "nvidia-libnvcomp-cu12<6,>=5; extra == \"all\""
+        ],
+        "requires_python": ">=3.9, <3.15",
+        "provides_extra": [
+          "nvjpeg",
+          "nvjpeg2k",
+          "nvtiff",
+          "all"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/six-1.17.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+          },
+          "hash": "sha256=4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "six",
+        "version": "1.17.0",
+        "summary": "Python 2 and 3 compatibility utilities",
+        "description": ".. image:: https://img.shields.io/pypi/v/six.svg\n   :target: https://pypi.org/project/six/\n   :alt: six on PyPI\n\n.. image:: https://readthedocs.org/projects/six/badge/?version=latest\n   :target: https://six.readthedocs.io/\n   :alt: six's documentation on Read the Docs\n\n.. image:: https://img.shields.io/badge/license-MIT-green.svg\n   :target: https://github.com/benjaminp/six/blob/master/LICENSE\n   :alt: MIT License badge\n\nSix is a Python 2 and 3 compatibility library.  It provides utility functions\nfor smoothing over the differences between the Python versions with the goal of\nwriting Python code that is compatible on both Python versions.  See the\ndocumentation for more information on what is provided.\n\nSix supports Python 2.7 and 3.3+.  It is contained in only one Python\nfile, so it can be easily copied into your project. (The copyright and license\nnotice must be retained.)\n\nOnline documentation is at https://six.readthedocs.io/.\n\nBugs can be reported to https://github.com/benjaminp/six.  The code can also\nbe found there.\n",
+        "home_page": "https://github.com/benjaminp/six",
+        "author": "Benjamin Peterson",
+        "author_email": "benjamin@python.org",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 3",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Utilities"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvidia_nvtiff_cu12-0.9.0.86-py3-none-manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "39d0ae1a81ba25163e51e275c79762572b78503a93445600b471d5f4c459b867"
+          },
+          "hash": "sha256=39d0ae1a81ba25163e51e275c79762572b78503a93445600b471d5f4c459b867"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvidia-nvtiff-cu12",
+        "version": "0.9.0.86",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "NVIDIA nvTIFF native runtime libraries",
+        "description": "###############################################################\nnvTIFF: CUDA accelerated TIFF Library\n###############################################################\n\nnvidia_nvtiff_cuXX is a high-performance TIFF CUDA library .\n\n\nDocumentation\n=============\n\nRefer to https://docs.nvidia.com/cuda/nvtiff/index.html for documentation.\n\nInstallation\n============\n\n\n.. code-block:: bash\n\n   pip install nvidia_nvtiff_cuXX\n\nwhere XX is the CUDA major version (currently CUDA 12 & 13 are supported).\n\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "cuda",
+          "nvidia",
+          "tiff",
+          "codec"
+        ],
+        "home_page": "https://developer.nvidia.com/nvtiff",
+        "author": "NVIDIA Corporation",
+        "author_email": "cuda_installer@nvidia.com",
+        "license": "NVIDIA Proprietary Software",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: Other/Proprietary License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence",
+          "Topic :: Software Development",
+          "Topic :: Software Development :: Libraries",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Environment :: GPU :: NVIDIA CUDA",
+          "Environment :: GPU :: NVIDIA CUDA :: 12"
+        ],
+        "requires_python": ">=3"
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/makefun-1.16.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "43baa4c3e7ae2b17de9ceac20b669e9a67ceeadff31581007cca20a07bbe42c4"
+          },
+          "hash": "sha256=43baa4c3e7ae2b17de9ceac20b669e9a67ceeadff31581007cca20a07bbe42c4"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "makefun",
+        "version": "1.16.0",
+        "summary": "Small library to dynamically create python functions.",
+        "description": "# makefun\n\n[![Python versions](https://img.shields.io/pypi/pyversions/makefun.svg)](https://pypi.python.org/pypi/makefun/) [![Build Status](https://github.com/smarie/python-makefun/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-makefun/actions/workflows/base.yml) [![Tests Status](https://smarie.github.io/python-makefun/reports/junit/junit-badge.svg?dummy=8484744)](https://smarie.github.io/python-makefun/reports/junit/report.html) [![Coverage Status](https://smarie.github.io/python-makefun/reports/coverage/coverage-badge.svg?dummy=8484744)](https://smarie.github.io/python-makefun/reports/coverage/index.html) [![codecov](https://codecov.io/gh/smarie/python-makefun/branch/main/graph/badge.svg)](https://codecov.io/gh/smarie/python-makefun) [![Flake8 Status](https://smarie.github.io/python-makefun/reports/flake8/flake8-badge.svg?dummy=8484744)](https://smarie.github.io/python-makefun/reports/flake8/index.html)\n\n[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-makefun/) [![PyPI](https://img.shields.io/pypi/v/makefun.svg)](https://pypi.python.org/pypi/makefun/) [![Downloads](https://pepy.tech/badge/makefun)](https://pepy.tech/project/makefun) [![Downloads per week](https://pepy.tech/badge/makefun/week)](https://pepy.tech/project/makefun) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-makefun.svg)](https://github.com/smarie/python-makefun/stargazers)\n\nSmall library to dynamically create python functions.\n\nThe documentation for users is available here: [https://smarie.github.io/python-makefun/](https://smarie.github.io/python-makefun/)\n\nA readme for developers is available here: [https://github.com/smarie/python-makefun](https://github.com/smarie/python-makefun)\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "decorate",
+          "decorator",
+          "compile",
+          "make",
+          "dynamic",
+          "function",
+          "generate",
+          "generation",
+          "define",
+          "definition",
+          "signature",
+          "args",
+          "wrapper",
+          "wraps"
+        ],
+        "home_page": "https://github.com/smarie/python-makefun",
+        "download_url": "https://github.com/smarie/python-makefun/tarball/1.16.0",
+        "author": "Sylvain MARIE <sylvain.marie@se.com>",
+        "maintainer": "Sylvain MARIE <sylvain.marie@se.com>",
+        "license": "BSD 3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "funcsigs; python_version < \"3.3\""
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvidia_nvjpeg_cu12-12.4.0.76-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "3888f10b32fbd58e80166c48e01073732d752fa5f167b7cb5b9615f1c6375a20"
+          },
+          "hash": "sha256=3888f10b32fbd58e80166c48e01073732d752fa5f167b7cb5b9615f1c6375a20"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvidia-nvjpeg-cu12",
+        "version": "12.4.0.76",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "NVJPEG native runtime libraries",
+        "description": "NVJPEG native runtime libraries\n",
+        "keywords": [
+          "cuda",
+          "nvidia",
+          "runtime",
+          "machine learning",
+          "deep learning"
+        ],
+        "home_page": "https://developer.nvidia.com/cuda-zone",
+        "author": "Nvidia CUDA Installer Team",
+        "author_email": "compute_installer@nvidia.com",
+        "license": "LicenseRef-NVIDIA-Proprietary",
+        "license_file": [
+          "License.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: Other/Proprietary License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence",
+          "Topic :: Software Development",
+          "Topic :: Software Development :: Libraries",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux"
+        ],
+        "requires_python": ">=3"
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvidia_nvjpeg2k_cu12-0.12.0.58-py3-none-manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "9fd28574f72e04a54b406c602fea5141d035f1011646697ac0fcc768062f41ba"
+          },
+          "hash": "sha256=9fd28574f72e04a54b406c602fea5141d035f1011646697ac0fcc768062f41ba"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvidia-nvjpeg2k-cu12",
+        "version": "0.12.0.58",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "NVIDIA nvJPEG2000 native runtime libraries",
+        "description": "###############################################################\nnvJPEG2000: CUDA accelerated JPEG 2000 Codec Library\n###############################################################\n\n`nvidia_nvjpeg2k_cuXX <https://developer.nvidia.com/nvjpeg>`_ is a high-performance JPEG 2000 CUDA library .\n\n\nDocumentation\n=============\n\nRefer to https://docs.nvidia.com/cuda/nvjpeg2000/index.html for documentation.\n\nInstallation\n============\n\n\n.. code-block:: bash\n\n   pip install nvidia_nvjpeg2k_cuXX\n\nwhere XX is the CUDA major version (currently CUDA 12 & 13 are supported).\n\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "cuda",
+          "nvidia",
+          "jpeg2000",
+          "codec"
+        ],
+        "home_page": "https://developer.nvidia.com/nvjpeg",
+        "author": "NVIDIA Corporation",
+        "author_email": "cuda_installer@nvidia.com",
+        "license": "NVIDIA Proprietary Software",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: Other/Proprietary License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence",
+          "Topic :: Software Development",
+          "Topic :: Software Development :: Libraries",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Environment :: GPU :: NVIDIA CUDA",
+          "Environment :: GPU :: NVIDIA CUDA :: 12"
+        ],
+        "requires_python": ">=3"
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/nvtx-0.2.17-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "0e0cb246479351c333a55edcab10c2b452a018c8ee022d640741154c85121166"
+          },
+          "hash": "sha256=0e0cb246479351c333a55edcab10c2b452a018c8ee022d640741154c85121166"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "nvtx",
+        "version": "0.2.17",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Python NVTX - Python code annotation library",
+        "description": "# nvtx Python package\n\n## Installation\n\nInstall using conda:\n```\nconda install -c conda-forge nvtx\n```\n\n...or using pip:\n```\npython -m pip install nvtx\n```\n\n## Quick start\n\n1. Annotate the parts of your Python code you wish to profile/analyze:\n\n   ```python\n   # demo.py\n\n   import time\n   import nvtx\n\n   @nvtx.annotate(color=\"blue\")\n   def my_function():\n       for i in range(5):\n           with nvtx.annotate(\"my_loop\", color=\"red\"):\n               time.sleep(i)\n\n   my_function()\n   ```\n\n2. Use [NVIDIA Nsight Systems](https://developer.nvidia.com/nsight-systems) to\n   collect profile data:\n\n   ```\n   nsys profile -t nvtx python demo.py\n   ```\n\n3. Visualize the results using the Nsight systems GUI:\n\n   ![demo](https://raw.githubusercontent.com/NVIDIA/NVTX/release-v3/docs/images/example_range.png)\n\n## Documentation\n\nSee [here](https://nvidia.github.io/NVTX/python/) for detailed docs.\n\n## Release Notes\n\n### 0.2.17\n\n- Discover an NVTX injection from the CUDA driver when environment variable\n  `NVTX_INJECTION64_PATH` / `NVTX_INJECTION32_PATH` is not set (C langauge changes only).\n\n### 0.2.16\n\n- Add support for counter annotations through the NVTX Counters extension.\n- Add `nvtx.writer` for writing pre-collected events and counter samples (NVTXW).\n- Drop support for Python 3.8.\n- Fix several payload-handling edge cases.\n\n### 0.2.15\n\n- Extend Domain API to accept keyword arguments for event attributes.\n- Implement testing improvements.\n\n### 0.2.14\n\n- Add support for NumPy arrays as payloads.\n- Set up support for free-threaded Python.\n- Apply `NVTX_DISABLE` environment variable to `Profile` class.\n\n### 0.2.13\n\n- Fix tracing with tools that do not implement `nvtxDomainIsEnabled`.\n- Fix decorator ranges not ending when an exception is thrown.\n- Fix automatic function name annotation for decorator ranges.\n\n### 0.2.12\n\n- Expose API via `domain` object for better performance.\n- No-OP when domain is disabled.\n- Improved documentation.\n",
+        "description_content_type": "text/markdown",
+        "author": "NVIDIA Corporation",
+        "license_expression": "Apache-2.0 WITH LLVM-exception",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "Topic :: Database",
+          "Topic :: Scientific/Engineering",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "pytest; extra == \"test\"",
+          "setuptools; extra == \"test\"",
+          "pandas; extra == \"test\"",
+          "sphinx; extra == \"docs\"",
+          "nvidia_sphinx_theme; extra == \"docs\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/NVIDIA/NVTX",
+          "Documentation, https://nvidia.github.io/NVTX/python/",
+          "Repository, https://github.com/NVIDIA/NVTX",
+          "License, https://nvidia.github.io/NVTX/LICENSE.txt",
+          "Issues, https://github.com/NVIDIA/NVTX/issues"
+        ],
+        "provides_extra": [
+          "test",
+          "docs"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "file:///data1/xinghaitong/.cache/dali_install_tmp/verified_wheels/optree-0.20.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "5c4ed341ea1ee7eb04eff01527b88a868cb19aac672a667e0aefadf7d14c0260"
+          },
+          "hash": "sha256=5c4ed341ea1ee7eb04eff01527b88a868cb19aac672a667e0aefadf7d14c0260"
+        }
+      },
+      "is_direct": true,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "optree",
+        "version": "0.20.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Optimized PyTree Utilities.",
+        "description": "<!-- markdownlint-disable html -->\n\n# OpTree\n\n![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-brightgreen)\n[![PyPI](https://img.shields.io/pypi/v/optree?logo=pypi)](https://pypi.org/project/optree)\n![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/metaopt/optree/build.yml?label=build&logo=github)\n![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/metaopt/optree/tests.yml?label=tests&logo=github)\n[![Codecov](https://img.shields.io/codecov/c/github/metaopt/optree/main?logo=codecov)](https://codecov.io/gh/metaopt/optree)\n[![Documentation Status](https://img.shields.io/readthedocs/optree?logo=readthedocs)](https://optree.readthedocs.io)\n[![Downloads](https://static.pepy.tech/personalized-badge/optree?period=total&left_color=gray&right_color=blue&left_text=downloads)](https://pepy.tech/project/optree)\n[![GitHub Repo Stars](https://img.shields.io/github/stars/metaopt/optree?color=brightgreen&logo=github)](https://github.com/metaopt/optree/stargazers)\n\nOptimized PyTree Utilities.\n\n--------------------------------------------------------------------------------\n\n### Table of Contents  <!-- omit in toc --> <!-- markdownlint-disable heading-increment -->\n\n- [Installation](#installation)\n- [PyTrees](#pytrees)\n  - [Tree Nodes and Leaves](#tree-nodes-and-leaves)\n    - [Built-in PyTree Node Types](#built-in-pytree-node-types)\n    - [Registering a Container-like Custom Type as Non-leaf Nodes](#registering-a-container-like-custom-type-as-non-leaf-nodes)\n    - [Notes about the PyTree Type Registry](#notes-about-the-pytree-type-registry)\n  - [`None` is Non-leaf Node vs. `None` is Leaf](#none-is-non-leaf-node-vs-none-is-leaf)\n  - [Key Ordering for Dictionaries](#key-ordering-for-dictionaries)\n- [Changelog](#changelog)\n- [License](#license)\n\n--------------------------------------------------------------------------------\n\n## Installation\n\nInstall from PyPI ([![PyPI](https://img.shields.io/pypi/v/optree?logo=pypi)](https://pypi.org/project/optree) / ![Status](https://img.shields.io/pypi/status/optree)):\n\n```bash\npip3 install --upgrade optree\n```\n\nInstall from conda-forge ([![conda-forge](https://img.shields.io/conda/v/conda-forge/optree?logo=condaforge)](https://anaconda.org/conda-forge/optree)):\n\n```bash\nconda install conda-forge::optree\n```\n\nInstall the latest version from GitHub:\n\n```bash\npip3 install git+https://github.com/metaopt/optree.git\n```\n\nOr, clone this repo and install manually:\n\n```bash\ngit clone --depth=1 https://github.com/metaopt/optree.git && cd optree\n\npip3 install .\n```\n\nThe following options are available while building the Python C extension from source:\n\n```bash\nexport CMAKE_COMMAND=\"/path/to/custom/cmake\"\nexport CMAKE_BUILD_TYPE=\"Debug\"\nexport CMAKE_CXX_STANDARD=\"20\"  # C++17 is tested on Linux/macOS (C++20 is required on Windows)\nexport OPTREE_CXX_WERROR=\"OFF\"\nexport _GLIBCXX_USE_CXX11_ABI=\"1\"  # set to 0 to use the old libstdc++ ABI\nexport _DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR=\"1\"  # set to \"\" to disable the workaround for MSVC mutex layout change in VS 2022 v17.10+\nexport pybind11_DIR=\"/path/to/custom/pybind11\"\n\npip3 install .\n```\n\nCompiling from source requires Python 3.9+, a C++ compiler (`g++` / `clang++` / `icpx` / `cl.exe`) that supports C++20, and a `cmake` installation.\n\n--------------------------------------------------------------------------------\n\n## PyTrees\n\nA PyTree is a recursive structure that can be an arbitrarily nested Python container (e.g., `tuple`, `list`, `dict`, `OrderedDict`, `namedtuple`, etc.) and/or an opaque Python object.\nThe key concepts of tree operations are tree flattening and its inverse (unflattening).\nAdditional tree operations can be built from these two primitives (e.g., `tree_map = tree_unflatten ∘ map ∘ tree_flatten`).\n\nTree flattening traverses the entire tree in a left-to-right depth-first manner and returns the leaves in a deterministic order.\n\n```python\n>>> tree = {'b': (2, [3, 4]), 'a': 1, 'c': 5, 'd': 6}\n>>> optree.tree_flatten(tree)\n([1, 2, 3, 4, 5, 6], PyTreeSpec({'a': *, 'b': (*, [*, *]), 'c': *, 'd': *}))\n>>> optree.tree_flatten(1)\n([1], PyTreeSpec(*))\n>>> optree.tree_flatten(None)\n([], PyTreeSpec(None))\n>>> optree.tree_map(lambda x: x**2, tree)\n{'b': (4, [9, 16]), 'a': 1, 'c': 25, 'd': 36}\n```\n\nThis usually implies that equal pytrees produce equal lists of leaves and the same tree structure.\nSee also section [Key Ordering for Dictionaries](#key-ordering-for-dictionaries).\n\n```python\n>>> {'a': [1, 2], 'b': [3]} == {'b': [3], 'a': [1, 2]}\nTrue\n>>> optree.tree_leaves({'a': [1, 2], 'b': [3]}) == optree.tree_leaves({'b': [3], 'a': [1, 2]})\nTrue\n>>> optree.tree_structure({'a': [1, 2], 'b': [3]}) == optree.tree_structure({'b': [3], 'a': [1, 2]})\nTrue\n>>> optree.tree_map(lambda x: x**2, {'a': [1, 2], 'b': [3]})\n{'a': [1, 4], 'b': [9]}\n>>> optree.tree_map(lambda x: x**2, {'b': [3], 'a': [1, 2]})\n{'b': [9], 'a': [1, 4]}\n```\n\n> [!TIP]\n>\n> Since OpTree v0.14.1, a new namespace `optree.pytree` is introduced as aliases for `optree.tree_*` functions. The following examples are equivalent to the above:\n>\n> ```python\n> >>> import optree.pytree as pt\n> >>> tree = {'b': (2, [3, 4]), 'a': 1, 'c': 5, 'd': 6}\n> >>> pt.flatten(tree)\n> ([1, 2, 3, 4, 5, 6], PyTreeSpec({'a': *, 'b': (*, [*, *]), 'c': *, 'd': *}))\n> >>> pt.flatten(1)\n> ([1], PyTreeSpec(*))\n> >>> pt.flatten(None)\n> ([], PyTreeSpec(None))\n> >>> pt.map(lambda x: x**2, tree)\n> {'b': (4, [9, 16]), 'a': 1, 'c': 25, 'd': 36}\n> >>> pt.map(lambda x: x**2, {'a': [1, 2], 'b': [3]})\n> {'a': [1, 4], 'b': [9]}\n> >>> pt.map(lambda x: x**2, {'b': [3], 'a': [1, 2]})\n> {'b': [9], 'a': [1, 4]}\n> ```\n>\n> Since OpTree v0.16.0, a re-export API `optree.pytree.reexport(...)` is available to create a new module that exports all the `optree.pytree` APIs with a given namespace.\n> This is useful for downstream libraries to create their own pytree utilities without passing the `namespace` argument explicitly.\n>\n> ```python\n> # foo/__init__.py\n> import optree\n> pytree = optree.pytree.reexport(namespace='foo')\n> del optree\n>\n> # foo/bar.py\n> from foo import pytree\n>\n> @pytree.dataclasses.dataclass\n> class Bar:\n>     a: int\n>     b: float\n>\n> # User code\n> >>> import foo\n>\n> >>> foo.pytree.flatten({'a': 1, 'b': 2, 'c': foo.bar.Bar(3, 4.0)})\n> (\n>     [1, 2, 3, 4.0],\n>     PyTreeSpec({'a': *, 'b': *, 'c': CustomTreeNode(Bar[()], [*, *])}, namespace='foo')\n> )\n>\n> >>> foo.pytree.functools.reduce(lambda x, y: x * y, {'a': 1, 'b': 2, 'c': foo.bar.Bar(3, 4.0)})\n> 24.0\n> ```\n\n### Tree Nodes and Leaves\n\nA tree is a collection of non-leaf nodes and leaf nodes, where the leaf nodes are opaque objects having no children to flatten.\n`optree.tree_flatten(...)` will flatten the tree and return a list of leaf nodes while the non-leaf nodes will be stored in the tree structure specification.\n\n#### Built-in PyTree Node Types\n\nOpTree out-of-the-box supports the following Python container types in the global registry:\n\n- [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple)\n- [`list`](https://docs.python.org/3/library/stdtypes.html#list)\n- [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)\n- [`collections.namedtuple`](https://docs.python.org/3/library/collections.html#collections.namedtuple) and its subclasses\n- [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict)\n- [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)\n- [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque)\n- [`PyStructSequence`](https://docs.python.org/3/c-api/tuple.html#struct-sequence-objects) types created by C API [`PyStructSequence_NewType`](https://docs.python.org/3/c-api/tuple.html#c.PyStructSequence_NewType)\n- [`frozendict`](https://docs.python.org/3/library/stdtypes.html#frozendict) (Python 3.15+)\n\nThese types are considered non-leaf nodes in the tree.\nPython objects whose type is not registered are treated as leaf nodes.\nThe registry lookup uses the `is` operator to determine whether the type matches, so subclasses need to be registered explicitly; otherwise, their instances will be treated as leaves.\nThe [`NoneType`](https://docs.python.org/3/library/constants.html#None) is a special case discussed in section [`None` is Non-leaf Node vs. `None` is Leaf](#none-is-non-leaf-node-vs-none-is-leaf).\n\n#### Registering a Container-like Custom Type as Non-leaf Nodes\n\nA container-like Python type can be registered in the type registry with a pair of functions that specify:\n\n- `flatten_func(container) -> (children, metadata, entries)`: convert an instance of the container type to a `(children, metadata, entries)` triple, where `children` is an iterable of subtrees and `entries` is an iterable of path entries of the container (e.g., indices or keys).\n- `unflatten_func(metadata, children) -> container`: convert such a pair back to an instance of the container type.\n\nThe `metadata` is some necessary data apart from the children to reconstruct the container, e.g., the keys of the dictionary (the children are values).\n\nThe `entries` can be omitted (only return a pair) or are optional to implement (return `None`). If so, use `range(len(children))` (i.e., flat indices) as path entries of the current node. The signature for the flatten function can be one of the following:\n\n- `flatten_func(container) -> (children, metadata, entries)`\n- `flatten_func(container) -> (children, metadata, None)`\n- `flatten_func(container) -> (children, metadata)`\n\nThe following examples show how to register custom types and use them with `tree_flatten` and `tree_map`. Please refer to section [Notes about the PyTree Type Registry](#notes-about-the-pytree-type-registry) for more information.\n\n```python\n# Register a custom type with lambda functions\noptree.register_pytree_node(\n    set,\n    lambda s: (sorted(s), None),  # flatten: (set) -> (children, metadata)\n    lambda _, children: set(children),  # unflatten: (metadata, children) -> set\n    namespace='set',\n)\n\n# Register a custom type into a namespace with accessor support\nimport types\n\n\n# This can be whatever your container type is.\nclass MyContainer(types.SimpleNamespace):\n    \"\"\"A simple container type based on SimpleNamespace.\"\"\"\n\n\n# (Optional) Define a custom path entry type for your container for accessor support.\n# Here we showcase how to define one. In practice, you can use the built-in `optree.GetAttrEntry`.\nclass MyContainerEntry(optree.PyTreeEntry):\n    def __call__(self, obj):\n        return getattr(obj, self.entry)\n\n    def codify(self, node=''):\n        return f'{node}.{self.entry}'\n\n\noptree.register_pytree_node(\n    MyContainer,\n    flatten_func=lambda ct: (  # flatten: (MyContainer) -> (children, metadata, entries)\n        list(vars(ct).values()),\n        list(vars(ct).keys()),\n        list(vars(ct).keys()),\n    ),\n    unflatten_func=lambda keys, values: (  # unflatten: (metadata, children) -> MyContainer\n        MyContainer(**dict(zip(keys, values)))\n    ),\n    path_entry_type=MyContainerEntry,\n    namespace='mycontainer',\n)\n```\n\n```python\n>>> tree = {'config': MyContainer(lr=0.01, momentum=0.9), 'steps': 1000}\n\n# Flatten without specifying the namespace\n>>> optree.tree_flatten(tree)  # `MyContainer`s are leaf nodes\n([MyContainer(lr=0.01, momentum=0.9), 1000], PyTreeSpec({'config': *, 'steps': *}))\n\n# Flatten with the namespace\n>>> leaves, treespec = optree.tree_flatten(tree, namespace='mycontainer')\n>>> leaves, treespec\n(\n    [0.01, 0.9, 1000],\n    PyTreeSpec(\n        {\n            'config': CustomTreeNode(MyContainer[['lr', 'momentum']], [*, *]),\n            'steps': *\n        },\n        namespace='mycontainer'\n    )\n)\n\n# Custom `entries` are defined as attribute names\n>>> optree.tree_paths(tree, namespace='mycontainer')\n[('config', 'lr'), ('config', 'momentum'), ('steps',)]\n\n# Custom path entry type defines the pytree access behavior\n>>> optree.tree_accessors(tree, namespace='mycontainer')\n[\n    PyTreeAccessor(*['config'].lr, (MappingEntry(key='config', type=<class 'dict'>), MyContainerEntry(entry='lr', type=<class 'MyContainer'>))),\n    PyTreeAccessor(*['config'].momentum, (MappingEntry(key='config', type=<class 'dict'>), MyContainerEntry(entry='momentum', type=<class 'MyContainer'>))),\n    PyTreeAccessor(*['steps'], (MappingEntry(key='steps', type=<class 'dict'>),))\n]\n\n# Unflatten back to a copy of the original object\n>>> optree.tree_unflatten(treespec, leaves)\n{'config': MyContainer(lr=0.01, momentum=0.9), 'steps': 1000}\n```\n\nUsers can also extend the pytree registry by decorating the custom class and defining an instance method `__tree_flatten__` and a class method `__tree_unflatten__`.\n\n```python\nfrom collections import UserDict\n\n\n@optree.register_pytree_node_class(namespace='mydict')\nclass MyDict(UserDict):\n    TREE_PATH_ENTRY_TYPE = optree.MappingEntry  # used by accessor APIs\n\n    def __tree_flatten__(self):  # -> (children, metadata, entries)\n        reversed_keys = sorted(self.keys(), reverse=True)\n        return (\n            [self[key] for key in reversed_keys],  # children\n            reversed_keys,  # metadata\n            reversed_keys,  # entries\n        )\n\n    @classmethod\n    def __tree_unflatten__(cls, metadata, children):\n        return cls(zip(metadata, children))\n```\n\n```python\n>>> tree = MyDict(b=4, a=(2, 3), c=MyDict({'d': 5, 'f': 6}))\n\n# Flatten without specifying the namespace\n>>> optree.tree_flatten_with_path(tree)  # `MyDict`s are leaf nodes\n(\n    [()],\n    [MyDict(b=4, a=(2, 3), c=MyDict({'d': 5, 'f': 6}))],\n    PyTreeSpec(*)\n)\n\n# Flatten with the namespace\n>>> optree.tree_flatten_with_path(tree, namespace='mydict')\n(\n    [('c', 'f'), ('c', 'd'), ('b',), ('a', 0), ('a', 1)],\n    [6, 5, 4, 2, 3],\n    PyTreeSpec(\n        CustomTreeNode(MyDict[['c', 'b', 'a']], [CustomTreeNode(MyDict[['f', 'd']], [*, *]), *, (*, *)]),\n        namespace='mydict'\n    )\n)\n>>> optree.tree_flatten_with_accessor(tree, namespace='mydict')\n(\n    [\n        PyTreeAccessor(*['c']['f'], (MappingEntry(key='c', type=<class 'MyDict'>), MappingEntry(key='f', type=<class 'MyDict'>))),\n        PyTreeAccessor(*['c']['d'], (MappingEntry(key='c', type=<class 'MyDict'>), MappingEntry(key='d', type=<class 'MyDict'>))),\n        PyTreeAccessor(*['b'], (MappingEntry(key='b', type=<class 'MyDict'>),)),\n        PyTreeAccessor(*['a'][0], (MappingEntry(key='a', type=<class 'MyDict'>), SequenceEntry(index=0, type=<class 'tuple'>))),\n        PyTreeAccessor(*['a'][1], (MappingEntry(key='a', type=<class 'MyDict'>), SequenceEntry(index=1, type=<class 'tuple'>)))\n    ],\n    [6, 5, 4, 2, 3],\n    PyTreeSpec(\n        CustomTreeNode(MyDict[['c', 'b', 'a']], [CustomTreeNode(MyDict[['f', 'd']], [*, *]), *, (*, *)]),\n        namespace='mydict'\n    )\n)\n```\n\n#### Notes about the PyTree Type Registry\n\nThere are several key attributes of the pytree type registry:\n\n1. **The type registry is per-interpreter.** Registering a custom type affects all modules that use OpTree in the same interpreter. Each interpreter (including subinterpreters) maintains its own registry, while child processes forked via `multiprocessing` inherit a copy.\n\n> [!WARNING]\n> For safety reasons, a `namespace` must be specified while registering a custom type. It is\n> used to isolate the behavior of flattening and unflattening a pytree node type. This is to\n> prevent accidental collisions between different libraries that may register the same type.\n\n2. **Duplicate registration is not allowed.** Registering the same type in the same namespace a second time raises an error. To update the behavior, first call `unregister_pytree_node(cls, namespace=...)` and then re-register. Alternatively, register the type under a different `namespace`.\n\n    > [!WARNING]\n    > Any `PyTreeSpec` objects created before the unregistration still hold a reference to the old registration. Unflattening such a `PyTreeSpec` will use the **old** `unflatten_func`, not the newly registered one.\n\n3. **Built-in types cannot be re-registered.** The behavior of the types listed in [Built-in PyTree Node Types](#built-in-pytree-node-types) (e.g., key-sorted traversal for `dict`, `collections.defaultdict`, and `frozendict`) is fixed.\n\n4. **Inherited subclasses are not implicitly registered.** The registry lookup uses `type(obj) is registered_type` rather than `isinstance(obj, registered_type)`. Users need to register the subclasses explicitly. To register all subclasses, it is easy to implement with [`metaclass`](https://docs.python.org/3/reference/datamodel.html#metaclasses) or [`__init_subclass__`](https://docs.python.org/3/reference/datamodel.html#customizing-class-creation), for example:\n\n    ```python\n    from collections import UserDict\n\n\n    @optree.register_pytree_node_class(namespace='mydict')\n    class MyDict(UserDict):\n        TREE_PATH_ENTRY_TYPE = optree.MappingEntry  # used by accessor APIs\n\n        def __init_subclass__(cls):  # define this in the base class\n            super().__init_subclass__()\n            # Register a subclass to namespace 'mydict'\n            optree.register_pytree_node_class(cls, namespace='mydict')\n\n        def __tree_flatten__(self):  # -> (children, metadata, entries)\n            reversed_keys = sorted(self.keys(), reverse=True)\n            return (\n                [self[key] for key in reversed_keys],  # children\n                reversed_keys,  # metadata\n                reversed_keys,  # entries\n            )\n\n        @classmethod\n        def __tree_unflatten__(cls, metadata, children):\n            return cls(zip(metadata, children))\n\n\n    # Subclasses will be automatically registered in namespace 'mydict'\n    class MyAnotherDict(MyDict):\n        pass\n    ```\n\n    ```python\n    >>> tree = MyDict(b=4, a=(2, 3), c=MyAnotherDict({'d': 5, 'f': 6}))\n    >>> optree.tree_flatten_with_path(tree, namespace='mydict')\n    (\n        [('c', 'f'), ('c', 'd'), ('b',), ('a', 0), ('a', 1)],\n        [6, 5, 4, 2, 3],\n        PyTreeSpec(\n            CustomTreeNode(MyDict[['c', 'b', 'a']], [CustomTreeNode(MyAnotherDict[['f', 'd']], [*, *]), *, (*, *)]),\n            namespace='mydict'\n        )\n    )\n    >>> optree.tree_accessors(tree, namespace='mydict')\n    [\n        PyTreeAccessor(*['c']['f'], (MappingEntry(key='c', type=<class 'MyDict'>), MappingEntry(key='f', type=<class 'MyAnotherDict'>))),\n        PyTreeAccessor(*['c']['d'], (MappingEntry(key='c', type=<class 'MyDict'>), MappingEntry(key='d', type=<class 'MyAnotherDict'>))),\n        PyTreeAccessor(*['b'], (MappingEntry(key='b', type=<class 'MyDict'>),)),\n        PyTreeAccessor(*['a'][0], (MappingEntry(key='a', type=<class 'MyDict'>), SequenceEntry(index=0, type=<class 'tuple'>))),\n        PyTreeAccessor(*['a'][1], (MappingEntry(key='a', type=<class 'MyDict'>), SequenceEntry(index=1, type=<class 'tuple'>)))\n    ]\n    ```\n\n5. **Beware of infinite recursion in custom flatten functions.** The returned `children` are recursively flattened and may have the same type as the current node. Ensure your flatten function has a proper termination condition.\n\n    ```python\n    import numpy as np\n    import torch\n\n    optree.register_pytree_node(\n        np.ndarray,\n        # Children are nested lists of Python objects\n        lambda array: (np.atleast_1d(array).tolist(), array.ndim == 0),\n        lambda scalar, rows: np.asarray(rows) if not scalar else np.asarray(rows[0]),\n        namespace='numpy1',\n    )\n\n    optree.register_pytree_node(\n        np.ndarray,\n        # Returns a list of `np.ndarray`s without termination condition -> RecursionError!\n        lambda array: ([array.ravel()], array.shape),\n        lambda shape, children: children[0].reshape(shape),\n        namespace='numpy2',\n    )\n    ```\n\n### `None` is Non-leaf Node vs. `None` is Leaf\n\nThe [`None`](https://docs.python.org/3/library/constants.html#None) object is Python's singleton for \"no value\", analogous to `null` in other languages but also commonly used as a sentinel or implicit return value.\n\nBy default, the `None` object is considered a non-leaf node in the tree with arity 0, i.e., _**a non-leaf node that has no children**_.\nThis is like the behavior of an empty tuple.\nWhile flattening a tree, it will remain in the tree structure definitions rather than in the leaves list.\n\n```python\n>>> tree = {'b': (2, [3, 4]), 'a': 1, 'c': None, 'd': 5}\n>>> optree.tree_flatten(tree)\n([1, 2, 3, 4, 5], PyTreeSpec({'a': *, 'b': (*, [*, *]), 'c': None, 'd': *}))\n>>> optree.tree_flatten(tree, none_is_leaf=True)\n([1, 2, 3, 4, None, 5], PyTreeSpec({'a': *, 'b': (*, [*, *]), 'c': *, 'd': *}, NoneIsLeaf))\n>>> optree.tree_flatten(1)\n([1], PyTreeSpec(*))\n>>> optree.tree_flatten(None)\n([], PyTreeSpec(None))\n>>> optree.tree_flatten(None, none_is_leaf=True)\n([None], PyTreeSpec(*, NoneIsLeaf))\n```\n\nOpTree provides a keyword argument `none_is_leaf` to determine whether to consider the `None` object as a leaf, like other opaque objects.\nIf `none_is_leaf=True`, the `None` object will be placed in the leaves list.\nOtherwise, the `None` object will remain in the tree structure specification.\n\n```python\n>>> import torch\n\n>>> linear = torch.nn.Linear(in_features=3, out_features=2, bias=False)\n>>> linear._parameters  # a container has None\nOrderedDict({\n    'weight': Parameter containing:\n              tensor([[-0.6677,  0.5209,  0.3295],\n                      [-0.4876, -0.3142,  0.1785]], requires_grad=True),\n    'bias': None\n})\n\n>>> optree.tree_map(torch.zeros_like, linear._parameters)\nOrderedDict({\n    'weight': tensor([[0., 0., 0.],\n                      [0., 0., 0.]]),\n    'bias': None\n})\n\n>>> optree.tree_map(torch.zeros_like, linear._parameters, none_is_leaf=True)\nTraceback (most recent call last):\n    ...\nTypeError: zeros_like(): argument 'input' (position 1) must be Tensor, not NoneType\n\n>>> optree.tree_map(lambda t: torch.zeros_like(t) if t is not None else 0, linear._parameters, none_is_leaf=True)\nOrderedDict({\n    'weight': tensor([[0., 0., 0.],\n                      [0., 0., 0.]]),\n    'bias': 0\n})\n```\n\n### Key Ordering for Dictionaries\n\nThe built-in Python dictionary ([`builtins.dict`](https://docs.python.org/3/library/stdtypes.html#dict)) is a mapping whose leaves are its values.\nSince [Python 3.7](https://docs.python.org/3/whatsnew/3.7.html), `dict` is guaranteed to be insertion ordered, but the equality operator (`==`) ignores key order.\nTo ensure [referential transparency](https://en.wikipedia.org/wiki/Referential_transparency), where \"equal `dict`\" implies \"equal ordering of leaves\", the leaves (values) are returned in key-sorted order.\nThe same applies to [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict) and [`frozendict`](https://docs.python.org/3/library/stdtypes.html#frozendict) (Python 3.15+).\n\n```python\n>>> optree.tree_flatten({'a': [1, 2], 'b': [3]})\n([1, 2, 3], PyTreeSpec({'a': [*, *], 'b': [*]}))\n>>> optree.tree_flatten({'b': [3], 'a': [1, 2]})\n([1, 2, 3], PyTreeSpec({'a': [*, *], 'b': [*]}))\n```\n\nSorting ensures that equal dictionaries always flatten to the same leaf sequence, regardless of insertion order. This is critical for operations that rely on positional correspondence between leaves. Consider two parameter `dict`s that are equal but constructed in different orders:\n\n```python\n>>> import numpy as np\n>>> params1 = {'weight': np.array([[1.0, 2.0], [3.0, 4.0]]), 'bias': np.array([5.0, 6.0])}\n>>> params2 = {'bias': np.array([5.0, 6.0]), 'weight': np.array([[1.0, 2.0], [3.0, 4.0]])}\n>>> optree.tree_all(optree.tree_map(np.allclose, params1, params2))\nTrue\n```\n\nBecause `tree_map` zips leaves positionally, sorted keys guarantee correct element-wise operations:\n\n```python\n>>> optree.tree_map(lambda x, y: x - y, params1, params2)\n{\n    'weight': array([[0., 0.],\n                     [0., 0.]]),\n    'bias': array([0., 0.])\n}\n```\n\nThe same applies to `tree_ravel`, which concatenates all leaves into a single 1D array:\n\n```python\n>>> from optree.integrations.numpy import tree_ravel\n>>> tree_ravel(params1)[0]\narray([5., 6., 1., 2., 3., 4.])  # 'bias' before 'weight' (sorted)\n>>> tree_ravel(params2)[0]\narray([5., 6., 1., 2., 3., 4.])  # same order, despite different insertion order\n```\n\nWithout sorting, insertion order would silently corrupt the results. Here is a counterexample using `dict_insertion_ordered`:\n\n```python\n>>> with optree.dict_insertion_ordered(True, namespace='demo'):\n...     flat1, _ = tree_ravel(params1, namespace='demo')\n...     flat2, _ = tree_ravel(params2, namespace='demo')\n>>> flat1\narray([1., 2., 3., 4., 5., 6.])  # weight, bias (insertion order of params1)\n>>> flat2\narray([5., 6., 1., 2., 3., 4.])  # bias, weight (insertion order of params2)\n>>> flat1 - flat2                # WRONG! Should be all zeros for equal params\narray([-4., -4.,  2.,  2.,  2.,  2.])\n```\n\nTo preserve insertion order during pytree traversal, use [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict), which considers key order in equality checks:\n\n```python\n>>> OrderedDict([('a', [1, 2]), ('b', [3])]) == OrderedDict([('b', [3]), ('a', [1, 2])])\nFalse\n>>> optree.tree_flatten(OrderedDict([('a', [1, 2]), ('b', [3])]))\n([1, 2, 3], PyTreeSpec(OrderedDict({'a': [*, *], 'b': [*]})))\n>>> optree.tree_flatten(OrderedDict([('b', [3]), ('a', [1, 2])]))\n([3, 1, 2], PyTreeSpec(OrderedDict({'b': [*], 'a': [*, *]})))\n```\n\nTo flatten [`builtins.dict`](https://docs.python.org/3/library/stdtypes.html#dict), [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict), and [`frozendict`](https://docs.python.org/3/library/stdtypes.html#frozendict) (Python 3.15+) objects with the insertion order preserved, use the `dict_insertion_ordered` context manager:\n\n```python\n>>> tree = {'b': (2, [3, 4]), 'a': 1, 'c': None, 'd': 5}\n>>> optree.tree_flatten(tree)\n(\n    [1, 2, 3, 4, 5],\n    PyTreeSpec({'a': *, 'b': (*, [*, *]), 'c': None, 'd': *})\n)\n>>> with optree.dict_insertion_ordered(True, namespace='some-namespace'):\n...     optree.tree_flatten(tree, namespace='some-namespace')\n(\n    [2, 3, 4, 1, 5],\n    PyTreeSpec({'b': (*, [*, *]), 'a': *, 'c': None, 'd': *}, namespace='some-namespace')\n)\n```\n\n**Since OpTree v0.9.0, the key order of the reconstructed output dictionaries from `tree_unflatten` is guaranteed to be consistent with the key order of the input dictionaries in `tree_flatten`.**\n\n```python\n>>> leaves, treespec = optree.tree_flatten({'b': [3], 'a': [1, 2]})\n>>> leaves, treespec\n([1, 2, 3], PyTreeSpec({'a': [*, *], 'b': [*]}))\n>>> optree.tree_unflatten(treespec, leaves)\n{'b': [3], 'a': [1, 2]}\n>>> optree.tree_map(lambda x: x, {'b': [3], 'a': [1, 2]})\n{'b': [3], 'a': [1, 2]}\n>>> optree.tree_map(lambda x: x + 1, {'b': [3], 'a': [1, 2]})\n{'b': [4], 'a': [2, 3]}\n```\n\nThis property is also preserved during serialization/deserialization.\n\n```python\n>>> leaves, treespec = optree.tree_flatten({'b': [3], 'a': [1, 2]})\n>>> leaves, treespec\n([1, 2, 3], PyTreeSpec({'a': [*, *], 'b': [*]}))\n>>> restored_treespec = pickle.loads(pickle.dumps(treespec))\n>>> optree.tree_unflatten(treespec, leaves)\n{'b': [3], 'a': [1, 2]}\n>>> optree.tree_unflatten(restored_treespec, leaves)\n{'b': [3], 'a': [1, 2]}\n```\n\n> [!NOTE]\n> The `dict` keys are not required to be comparable (sortable) or of a single type.\n> Keys are sorted by `key=lambda k: k` first if possible, otherwise falling back to `key=lambda k: (f'{k.__class__.__module__}.{k.__class__.__qualname__}', k)`. This handles most cases.\n>\n> ```python\n> >>> sorted({1: 2, 1.5: 1}.keys())\n> [1, 1.5]\n> >>> sorted({'a': 3, 1: 2, 1.5: 1}.keys())\n> Traceback (most recent call last):\n>     ...\n> TypeError: '<' not supported between instances of 'int' and 'str'\n> >>> sorted({'a': 3, 1: 2, 1.5: 1}.keys(), key=lambda k: (f'{k.__class__.__module__}.{k.__class__.__qualname__}', k))\n> [1.5, 1, 'a']\n> ```\n\n--------------------------------------------------------------------------------\n\n## Changelog\n\nSee [CHANGELOG.md](https://github.com/metaopt/optree/blob/HEAD/CHANGELOG.md).\n\n--------------------------------------------------------------------------------\n\n## License\n\nOpTree is released under the Apache License 2.0.\n\nOpTree is based on JAX's implementation of the PyTree utility, with significant refactoring and several improvements.\nThe original licenses can be found at [JAX's Apache License 2.0](https://github.com/google/jax/blob/HEAD/LICENSE) and [Tensorflow's Apache License 2.0](https://github.com/tensorflow/tensorflow/blob/HEAD/LICENSE).\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "PyTree",
+          "Tree Manipulation",
+          "Tree Traversal",
+          "Functional Programming"
+        ],
+        "author": "OpTree Contributors",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Programming Language :: C++",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: MacOS",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: iOS",
+          "Operating System :: Android",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "typing-extensions>=4.10.0",
+          "typing-extensions>=4.12.0; python_version >= \"3.13\"",
+          "typing-extensions>=4.14.0; python_version >= \"3.15\"",
+          "attrs; extra == \"attrs\"",
+          "jax; extra == \"jax\"",
+          "numpy; extra == \"numpy\"",
+          "torch; extra == \"torch\"",
+          "cpplint; extra == \"lint\"",
+          "doc8; extra == \"lint\"",
+          "mypy; extra == \"lint\"",
+          "pre-commit; extra == \"lint\"",
+          "pyenchant; extra == \"lint\"",
+          "pylint[spelling]; extra == \"lint\"",
+          "ruff; extra == \"lint\"",
+          "xdoctest; extra == \"lint\"",
+          "pytest; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "covdefaults; extra == \"test\"",
+          "rich; extra == \"test\"",
+          "typing-extensions==4.10.0; (python_version < \"3.13\" and platform_system == \"Linux\") and extra == \"test\"",
+          "typing-extensions==4.10.0; (python_version < \"3.13\" and platform_system == \"Darwin\") and extra == \"test\"",
+          "typing-extensions==4.10.0; (python_version < \"3.13\" and platform_system == \"Windows\") and extra == \"test\"",
+          "typing-extensions==4.12.0; (python_version >= \"3.13\" and python_version < \"3.15\" and platform_system == \"Linux\") and extra == \"test\"",
+          "typing-extensions==4.12.0; (python_version >= \"3.13\" and python_version < \"3.15\" and platform_system == \"Darwin\") and extra == \"test\"",
+          "typing-extensions==4.12.0; (python_version >= \"3.13\" and python_version < \"3.15\" and platform_system == \"Windows\") and extra == \"test\"",
+          "typing-extensions==4.14.0; (python_version >= \"3.15\" and platform_system == \"Linux\") and extra == \"test\"",
+          "typing-extensions==4.14.0; (python_version >= \"3.15\" and platform_system == \"Darwin\") and extra == \"test\"",
+          "typing-extensions==4.14.0; (python_version >= \"3.15\" and platform_system == \"Windows\") and extra == \"test\"",
+          "sphinx~=8.0; extra == \"docs\"",
+          "sphinx-autoapi; extra == \"docs\"",
+          "sphinx-autobuild; extra == \"docs\"",
+          "sphinx-autodoc-typehints; extra == \"docs\"",
+          "sphinx-copybutton; extra == \"docs\"",
+          "sphinx-rtd-theme; extra == \"docs\"",
+          "sphinxcontrib-bibtex; extra == \"docs\"",
+          "docutils; extra == \"docs\"",
+          "attrs; extra == \"docs\"",
+          "jax[cpu]; extra == \"docs\"",
+          "numpy; extra == \"docs\"",
+          "torch; extra == \"docs\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/metaopt/optree",
+          "Repository, https://github.com/metaopt/optree",
+          "Documentation, https://optree.readthedocs.io",
+          "Bug Report, https://github.com/metaopt/optree/issues"
+        ],
+        "provides_extra": [
+          "attrs",
+          "jax",
+          "numpy",
+          "torch",
+          "lint",
+          "test",
+          "docs"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.12.15",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "5.4.0-216-generic",
+    "platform_system": "Linux",
+    "platform_version": "#236-Ubuntu SMP Fri Apr 11 19:53:21 UTC 2025",
+    "python_full_version": "3.12.15",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.12",
+    "sys_platform": "linux"
+  }
+}

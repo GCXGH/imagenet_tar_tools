@@ -1,0 +1,11 @@
+model,backend,physical_gpus,world,micro_batch,workers_per_rank,pin_memory,measurement,seconds_per_update,images_per_second,cache,status
+dense_wider,imagefolder,1-4,4,256,4,true,short_windows,3.3714447,303.7,uncontrolled,historical
+dense_wider,imagefolder,1-4,4,256,4,false,short_windows,3.2842968,311.8,uncontrolled,historical
+dense_wider,tar,1-4,4,256,2,true,short_windows,0.9766909,1048.4,uncontrolled,historical
+dense_wider,tar,1-4,4,256,4,true,short_windows_retry,0.6165144,1660.9,uncontrolled,historical
+dense_wider,tar,1-4,4,256,4,false,short_windows,0.5842552,1752.7,uncontrolled,historical
+dense_wider,tar,1-4,4,256,4,false,short_windows_other_epoch,0.5680479,1802.7,uncontrolled,historical
+dense_wider,tar,1-4,4,256,8,false,200_updates,0.4613408,2219.6173,uncontrolled,historical
+pbi_wider,tar,1-4,4,256,4,false,short_windows,0.5469663,1872.1,uncontrolled,historical
+pbi_wider,tar,1-4,4,256,8,false,200_updates,0.5272887,1942.0103,uncontrolled,historical
+pbi_wider,tar,4-7,4,256,8,false,epochs_2_to_100_mean,0.4944594,2071.5341,uncontrolled,completed_100_epochs

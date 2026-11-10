@@ -1,0 +1,107 @@
+{
+  "selection": {
+    "manifest_sha256": "f855f53ee416fdbb27e32b1102365235cbf9a3bad6efe57fd9c46974478308ef",
+    "samples": 256,
+    "payload_bytes": 29851472,
+    "tar_read_hash_seconds": 0.21840618643909693,
+    "source_read_compare_seconds": 2.593537508510053,
+    "cache": "uncontrolled, TAR precedes source; no cold-cache speedup claimed",
+    "sample_set_sha256": "36f00d483af095ecf493afb8a6c0b3777471afddca134355c85eb6d6372bb3d3"
+  },
+  "phase": "cpu",
+  "python": "3.12.15",
+  "torch": "2.7.1+cu118",
+  "recipe": "illustrative torchvision RRC224 bicubic + flip + RandAugment(2,9) + Tensor + ImageNet normalize; NOT timm recipe equivalence",
+  "status": "complete",
+  "settings": {
+    "root": "/data1/xinghaitong/dataset/imagenet1k_original_tar_v1",
+    "phase": "cpu",
+    "count": 256,
+    "batch_size": 16,
+    "steps": 8,
+    "warmup": 4,
+    "max_seconds": 180,
+    "result": "experiments/webdataset_baseline/cpu_probe_20261110.json",
+    "execute": true
+  },
+  "measurements": {
+    "decode": [
+      {
+        "decoder": "pil",
+        "seconds": 0.524131478741765,
+        "images_per_second": 488.42706531299365,
+        "pixels": 52824814,
+        "measurement": "decode only, compressed input in RAM"
+      },
+      {
+        "decoder": "torchvision",
+        "seconds": 0.4655424663797021,
+        "images_per_second": 549.8961286835716,
+        "pixels": 52824814,
+        "measurement": "decode only, compressed input in RAM"
+      }
+    ],
+    "pixel_comparison_first_32": {
+      "max_abs": 0,
+      "mean_abs_per_image": 0.0
+    },
+    "loaders": [
+      {
+        "output": "float32",
+        "workers": 0,
+        "block_size": 16,
+        "seconds": 1.4856498641893268,
+        "images_per_second": 172.31516400379527,
+        "wait": {
+          "total_seconds": 1.485569960437715,
+          "p50_seconds": 0.08492801385000348,
+          "p95_seconds": 0.12565623805858195
+        },
+        "sample_set_sha256": "36f00d483af095ecf493afb8a6c0b3777471afddca134355c85eb6d6372bb3d3",
+        "includes": "startup, PIL, RRC, flip, RandAugment, conversion, IPC, batching; RAM bytes"
+      },
+      {
+        "output": "float32",
+        "workers": 4,
+        "block_size": 1,
+        "seconds": 1.1091861631721258,
+        "images_per_second": 230.79984992588967,
+        "wait": {
+          "total_seconds": 1.0875867884606123,
+          "p50_seconds": 0.060680808033794165,
+          "p95_seconds": 0.10192599263973534
+        },
+        "sample_set_sha256": "36f00d483af095ecf493afb8a6c0b3777471afddca134355c85eb6d6372bb3d3",
+        "includes": "startup, PIL, RRC, flip, RandAugment, conversion, IPC, batching; RAM bytes"
+      },
+      {
+        "output": "float32",
+        "workers": 4,
+        "block_size": 16,
+        "seconds": 0.5584534304216504,
+        "images_per_second": 458.4088592789406,
+        "wait": {
+          "total_seconds": 0.5428461320698261,
+          "p50_seconds": 0.0019716150127351284,
+          "p95_seconds": 0.13568422850221395
+        },
+        "sample_set_sha256": "36f00d483af095ecf493afb8a6c0b3777471afddca134355c85eb6d6372bb3d3",
+        "includes": "startup, PIL, RRC, flip, RandAugment, conversion, IPC, batching; RAM bytes"
+      },
+      {
+        "output": "uint8",
+        "workers": 4,
+        "block_size": 16,
+        "seconds": 0.4453308414667845,
+        "images_per_second": 574.8535159990577,
+        "wait": {
+          "total_seconds": 0.42491156328469515,
+          "p50_seconds": 0.0008675395511090755,
+          "p95_seconds": 0.11596142407506704
+        },
+        "sample_set_sha256": "36f00d483af095ecf493afb8a6c0b3777471afddca134355c85eb6d6372bb3d3",
+        "includes": "startup, PIL, RRC, flip, RandAugment, conversion, IPC, batching; RAM bytes"
+      }
+    ]
+  }
+}

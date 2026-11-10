@@ -1,0 +1,15 @@
+# Tested additions to spb; no torch/torchvision/numpy replacement.
+# See install_records/installed_20261110.json for hashes and artifact URLs.
+nvidia-dali-cuda120==2.4.0
+nvidia-libnvcomp-cu12==5.3.0.16
+nvidia-nvimgcodec-cu12==0.9.0.20
+nvidia-nvjpeg-cu12==12.4.0.76
+nvidia-nvjpeg2k-cu12==0.12.0.58
+nvidia-nvtiff-cu12==0.9.0.86
+astunparse==1.6.3
+gast==0.7.0
+six==1.17.0
+libcst==1.9.0
+makefun==1.16.0
+nvtx==0.2.17
+optree==0.20.0

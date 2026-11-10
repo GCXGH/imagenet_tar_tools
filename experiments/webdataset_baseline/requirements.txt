@@ -1,0 +1,4 @@
+# Install into an isolated environment/target; torch is supplied by the caller.
+webdataset==1.0.2
+braceexpand==0.1.7
+# Also required: numpy, PyYAML, Pillow, torch (use your training environment's versions).

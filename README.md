@@ -1,5 +1,20 @@
 # Original-byte ImageNet TAR preparation
 
+## ImageNet 加速方案导航（2026-11-10）
+
+后续方案按目录隔离，见 [`experiments/README.md`](experiments/README.md)。
+当前 TAR 的实现说明、已完成测试及 100 epoch 长跑结果见
+[`experiments/tar_original/README.md`](experiments/tar_original/README.md)；
+测试优先级和授权停止点见 [`experiments/ROADMAP.md`](experiments/ROADMAP.md)。
+`further_explore_reference.md` 仅作为候选方案参考，不是逐项强制执行清单。
+
+根目录的 `prepare.py` / `verify.py` / `test_prepare.py` / `prepare_imagenet.sh`
+保留为已有 TAR v1 的兼容入口，不搬动、不改写；尤其 `prepare.py` 的 SHA256
+已写入现有数据的转换配方，修改它会使原输出目录的转换恢复检查失败。
+新方案不得导入训练仓库或另一个方案的实现；公共约定仅限实验记录协议。
+下文 machine 61 的 `/mnt/data` 是历史机器配置，本机数据位置为
+`/data1/xinghaitong/dataset/`，不要直接执行历史机器的准备脚本。
+
 Independent dataset tooling: Python standard library only; no torch, no training
 repository imports, no downloads, no image resize, decode or JPEG re-encoding.
 Source files remain untouched. Images are copied byte-for-byte into uncompressed

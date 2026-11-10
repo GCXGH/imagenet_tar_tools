@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "samples": 128,
+  "unique_samples": 128,
+  "payload_bytes": 14142589,
+  "seconds": 3.104085326194763,
+  "manifest_sha256": "f855f53ee416fdbb27e32b1102365235cbf9a3bad6efe57fd9c46974478308ef",
+  "original_bytes_equal": true,
+  "pil_rgb_equal": true,
+  "cache": "uncontrolled",
+  "GPU": 0,
+  "workers": 0,
+  "measurement": "correctness only; includes source reread, SHA256 and two PIL decodes",
+  "limitation": "Not training augmentation equivalence or a throughput benchmark"
+}

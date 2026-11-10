@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "dali": "2.4.0",
+  "torch": "2.7.1+cu118",
+  "manifest_sha256": "f855f53ee416fdbb27e32b1102365235cbf9a3bad6efe57fd9c46974478308ef",
+  "count": 128,
+  "payload_bytes": 15758205,
+  "measurements": {
+    "decode": [
+      {
+        "decoder": "cpu",
+        "samples": 128,
+        "seconds_including_CPU_copy_and_PIL_comparison": 0.8185409307479858,
+        "exact_images": 128,
+        "mean_abs_per_image": 0.0,
+        "max_abs": 0,
+        "labels_equal": true,
+        "dimensions_equal": true
+      },
+      {
+        "decoder": "mixed",
+        "samples": 128,
+        "seconds_including_CPU_copy_and_PIL_comparison": 0.8368022199720144,
+        "exact_images": 0,
+        "mean_abs_per_image": 0.5501476706838142,
+        "max_abs": 44,
+        "labels_equal": true,
+        "dimensions_equal": true
+      }
+    ],
+    "preprocess": {
+      "shape": [
+        16,
+        3,
+        224,
+        224
+      ],
+      "finite": true,
+      "normalized_mean_abs": 0.109224334359169,
+      "normalized_max_abs": 3.8690476417541504,
+      "limitation": "DALI/PIL bicubic, rounding and center-crop semantics may differ; not bitwise equivalence"
+    },
+    "train": {
+      "model": "torchvision vit_b_16 weights=None, eager BF16, SGD",
+      "input": "RAM original bytes -> DALI mixed decode -> GPU deterministic resize/crop/normalize",
+      "batch": 16,
+      "first_step_seconds": 0.35163329262286425,
+      "subsequent_steps_seconds": [
+        0.0777558134868741,
+        0.07698045391589403,
+        0.06614620052278042,
+        0.07341051939874887,
+        0.06929329317063093,
+        0.07022861391305923,
+        0.08193506859242916
+      ],
+      "subsequent_images_per_second": 217.15949206943424,
+      "finite_losses": true,
+      "caveat": "Functional short run only, not same augmentation as preceding WDS benchmark; no speedup ratio"
+    }
+  }
+}

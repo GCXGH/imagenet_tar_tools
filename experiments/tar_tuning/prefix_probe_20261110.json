@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "root": "/data1/xinghaitong/dataset/imagenet1k_original_tar_v1",
+  "archive": "/data1/xinghaitong/dataset/imagenet1k_original_tar_v1/train/train-000037.tar",
+  "start": 768,
+  "count": 64,
+  "cache": "uncontrolled; repeated same window likely warm",
+  "measurement": "storage-only including payload SHA256; no decoding or GPU",
+  "limitations": "Single-shard prefix diagnosis, not a full-data bandwidth or train speedup",
+  "cases": [
+    {
+      "method": "existing_prefix_walk",
+      "seconds": 0.20671663247048855,
+      "samples": 64,
+      "useful_payload_bytes": 7174431,
+      "raw_read_bytes": 92274688,
+      "raw_read_calls": 22,
+      "raw_seek_calls": 18,
+      "read_amplification": 12.861603658882496,
+      "process_io_delta": {
+        "rchar": 92274791,
+        "wchar": 0,
+        "syscr": 24,
+        "syscw": 0,
+        "read_bytes": 66195456,
+        "write_bytes": 0,
+        "cancelled_write_bytes": 0
+      },
+      "sample_payload_order_sha256": "a89ff076925cf16e7bb58003df64ae3e6899e0b8914349c5ae24da4d61148539"
+    },
+    {
+      "method": "indexed_start",
+      "seconds": 0.02264959178864956,
+      "samples": 64,
+      "useful_payload_bytes": 7174431,
+      "raw_read_bytes": 8388608,
+      "raw_read_calls": 2,
+      "raw_seek_calls": 1,
+      "read_amplification": 1.169236696262045,
+      "process_io_delta": {
+        "rchar": 8388714,
+        "wchar": 0,
+        "syscr": 4,
+        "syscw": 0,
+        "read_bytes": 655360,
+        "write_bytes": 0,
+        "cancelled_write_bytes": 0
+      },
+      "sample_payload_order_sha256": "a89ff076925cf16e7bb58003df64ae3e6899e0b8914349c5ae24da4d61148539"
+    },
+    {
+      "method": "indexed_start",
+      "seconds": 0.020757928490638733,
+      "samples": 64,
+      "useful_payload_bytes": 7174431,
+      "raw_read_bytes": 8388608,
+      "raw_read_calls": 2,
+      "raw_seek_calls": 1,
+      "read_amplification": 1.169236696262045,
+      "process_io_delta": {
+        "rchar": 8388715,
+        "wchar": 0,
+        "syscr": 4,
+        "syscw": 0,
+        "read_bytes": 0,
+        "write_bytes": 0,
+        "cancelled_write_bytes": 0
+      },
+      "sample_payload_order_sha256": "a89ff076925cf16e7bb58003df64ae3e6899e0b8914349c5ae24da4d61148539"
+    },
+    {
+      "method": "existing_prefix_walk",
+      "seconds": 0.0720770126208663,
+      "samples": 64,
+      "useful_payload_bytes": 7174431,
+      "raw_read_bytes": 92274688,
+      "raw_read_calls": 22,
+      "raw_seek_calls": 18,
+      "read_amplification": 12.861603658882496,
+      "process_io_delta": {
+        "rchar": 92274795,
+        "wchar": 0,
+        "syscr": 24,
+        "syscw": 0,
+        "read_bytes": 0,
+        "write_bytes": 0,
+        "cancelled_write_bytes": 0
+      },
+      "sample_payload_order_sha256": "a89ff076925cf16e7bb58003df64ae3e6899e0b8914349c5ae24da4d61148539"
+    }
+  ],
+  "total_raw_read_bytes": 201326592
+}
